@@ -1,6 +1,12 @@
 import socket
 import sys
-a = print("""\n This is my simple tool for search if certain port is open or closed. 
+import pyttsx3
+
+sp = pyttsx3.init()
+sp.say("Welcome to my simple port scanner\n Bem vindo ao meu simples port scanner")
+sp.runAndWait()
+
+wm = print("""\n This is my simple tool for search if certain port is open or closed. 
                 made by ~pylover77""")
 print('*'*70)
 def Scannerxx():
@@ -20,3 +26,5 @@ def Scannerxx():
     elif sip ==("N"):
         sys.exit()
 Scannerxx()
+
+
